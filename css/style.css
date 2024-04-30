@@ -95,8 +95,8 @@ body {
       left: 0;
       justify-content: center;
       text-align: center;
-      width: 329px; /* Adjusted width */
-      height: 305px; /* Adjusted height */
+      width: 329px;
+      height: 305px;
       font-size: 20px;
       padding: 20px;
     }
