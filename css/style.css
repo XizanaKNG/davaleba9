@@ -1,0 +1,701 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 1440px;
+    background-color: rgb(255, 255, 255);
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    margin: 46px 0 0 40px;
+}
+
+.navigation{
+    font-family: "Barlow", sans-serif;
+    position: absolute;
+    margin: -45px 0 0 1020px;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.contact {
+    font-family: "Fraunces", serif;
+    margin-top: -17px;
+    width: 140px;
+    height: 56px;
+    border-radius: 50px;
+    border: none;
+    font-weight: 700;
+    color: #24303E;
+    cursor: pointer;
+    font-size: 15px;
+    line-height: 25px;
+    letter-spacing: -0.1071428582072258px;
+    transition: 0.4s;
+}
+
+.contact:hover {
+    background-color: #76CCF5;
+    color: white;
+}
+
+  
+.nav-list {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+  
+.nav-list li {
+    margin-right: 20px;
+}
+  
+.nav-list li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+  
+.burger-menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+  
+.line {
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    margin: 4px 0;
+}
+  
+@media screen and (max-width: 800px) {
+    .nav-list {
+      margin: 30px 0 0 40px;  
+      display: none;
+      flex-direction: column;
+      background-color: rgba(194, 238, 255, 0.877);
+      position: absolute;
+      top: 70px;
+      left: 0;
+      justify-content: center;
+      text-align: center;
+      width: 329px; /* Adjusted width */
+      height: 305px; /* Adjusted height */
+      font-size: 20px;
+      padding: 20px;
+    }
+
+    .nav-list.show {
+        display: flex;
+    }
+  
+    .nav-list li {
+      margin: 10px 0;
+    }
+  
+    .burger-menu {
+        margin-left: 320px;
+        display: flex;
+    }
+
+    .contact:hover {
+        background-color: yellow;
+        color: #24303E;
+    }
+}
+
+.background {
+    z-index: 1;
+    margin: -42px 0 0 -210px;
+    position: absolute;
+}
+
+header {
+    z-index: 2;
+}
+
+.arrow {
+    position: absolute;
+    z-index: 2;
+    margin: 320px 0 0 500px;
+}
+
+.main-text {
+    font-family: "Fraunces", serif;
+    position: absolute;
+    z-index: 2;
+    font-size: 56px;
+    font-weight: 900;
+    line-height: 69.05px;
+    letter-spacing: 8.75px;
+    text-transform: uppercase;
+    margin: 140px 0 0 160px;
+    color: white;
+}
+
+.brand {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    margin: 950px 0 0 -50px;
+}
+
+.section-two-main-text {
+    font-family: "Fraunces", serif;
+    font-size: 40px;
+    font-weight: 900;
+    line-height: 49.32px;
+    color: #24303E;
+    letter-spacing: -0.2857142984867096px;
+}
+
+.section-two-first-text {
+    font-family: "Barlow", sans-serif;
+    margin-top: 32px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 30px;
+    color: #808397;
+    letter-spacing: -0.12857143580913544px;
+}
+
+.section-two-second-text {
+    margin-top: 40px;
+    font-family: "Fraunces", serif;
+    font-size: 15px;
+    font-weight: 900;
+    line-height: 25px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-decoration: underline;
+    text-decoration-color: rgba(255, 204, 0, 0.5);
+    cursor: pointer;
+}
+
+.section-two-second-text:hover {
+    text-decoration: underline;
+    text-decoration-color: rgba(250, 212, 0, 1);
+}
+
+.egg {
+    margin: 758px 0 0 510px;
+    position: absolute;
+}
+
+.glass {
+    margin: 1358px 0 0 -210px;
+    position: absolute;
+}
+
+.stand-out {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    margin: 1560px 0 0 650px;
+}
+
+.section-three-main-text {
+    font-family: "Fraunces", serif;
+    font-size: 40px;
+    font-weight: 900;
+    line-height: 49.32px;
+    color: #24303E;
+    letter-spacing: -0.2857142984867096px;
+}
+
+.section-three-first-text {
+    font-family: "Barlow", sans-serif;
+    margin-top: 32px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 30px;
+    color: #808397;
+    letter-spacing: -0.12857143580913544px;
+}
+
+.section-three-second-text {
+    margin-top: 40px;
+    font-family: "Fraunces", serif;
+    font-size: 15px;
+    font-weight: 900;
+    line-height: 25px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-decoration: underline;
+    text-decoration-color: rgba(254, 119, 102, 0.5);
+    cursor: pointer;
+}
+
+.section-three-second-text:hover {
+    text-decoration: underline;
+    text-decoration-color: rgba(254, 119, 102, 1);
+}
+
+.fruit {
+    position: absolute;
+    display: flex;
+    margin: 1958px 0 0 -210px;
+}
+
+.graphic {
+    text-align: center;
+    position: absolute;
+    margin: 2350px 0 0 -15px;
+}
+
+.graphic-title {
+    font-family: "Fraunces", serif;
+    font-size: 28px;
+    color: #24554A;
+    font-weight: 900;
+    line-height: 34.52px;
+    letter-spacing: -0.20000000298023224px;
+}
+
+.graphic-description {
+    margin-top: 27px;
+    color: #3E7467;
+    font-family: "Barlow", sans-serif;
+    font-weight: 600;
+    line-height: 27px;
+    letter-spacing: -0.11428571492433548px;
+}
+
+.photography {
+    text-align: center;
+    position: absolute;
+    margin: 2350px 0 0 710px;
+}
+
+.photography-title {
+    font-family: "Fraunces", serif;
+    font-size: 28px;
+    color: #052C3B;
+    font-weight: 900;
+    line-height: 34.52px;
+    letter-spacing: -0.20000000298023224px;
+}
+
+.photography-description {
+    margin-top: 27px;
+    color: #052C3B;
+    font-family: "Barlow", sans-serif;
+    font-weight: 600;
+    line-height: 27px;
+    letter-spacing: -0.11428571492433548px;
+}
+
+.client {
+    position: absolute;
+    margin: 2775px 0 0 338px;
+    font-size: 20px;
+    font-family: "Fraunces", serif;
+    font-weight: 900;
+    line-height: 24.66px;
+    letter-spacing: 5px;
+    color: #A7AAAD;
+}
+
+.first-persons {
+    position: absolute;
+    margin: 2880px 0 0 -50px;
+    text-align: center;
+}
+
+.person-description {
+    margin-top: 58px;
+    font-family: "Barlow", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 32px;
+    color: #5B636D;
+    letter-spacing: -0.12857143580913544px;
+}
+
+.person-name {
+    margin-top: 69px;
+    font-family: "Fraunces", serif;
+    font-size: 18px;
+    font-weight: 900;
+    line-height: 22.19px;
+    color: #24303E;
+    letter-spacing: -0.12857143580913544px;
+}
+
+.person-job {
+    font-family: "Barlow", sans-serif;    
+    font-size: 14px;
+    font-weight: 600;
+    color: #A7AAAD;
+    line-height: 25px;
+    letter-spacing: -0.10000000149011612px;
+}
+
+.second-persons {
+    position: absolute;
+    margin: 2880px 0 0 346px;
+    text-align: center;
+}
+
+.third-persons {
+    position: absolute;
+    margin: 2880px 0 0 740px;
+    text-align: center;
+}
+
+.four-images {
+    margin: 3500px 0 0 -210px;
+    position: absolute;
+    display: flex;
+}
+
+footer {
+    position: absolute;
+    background-color: #90D4C6;
+    height: 350px;
+    width: 1440px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 8245px;
+}
+
+.footer-logo {
+    position: absolute;
+    margin: -75px;
+}
+
+.footer-ul {
+    margin: 1px 0 0 -130px;
+    position: absolute;
+    display: flex;
+    list-style: none;
+    font-family: "Barlow", sans-serif;    font-size: 14px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #458D7E;
+    line-height: 25px;
+    letter-spacing: -0.12857143580913544px;
+}
+
+.services {
+    margin-left: 57px;
+}
+
+.projects {
+    margin-left: 57px;
+}
+
+.services:hover {
+    color: white;
+    cursor: pointer;
+}
+
+.projects:hover {
+    color: white;
+    cursor: pointer;
+}
+
+.about:hover {
+    color: white;
+    cursor: pointer;
+}
+
+.icons {
+    position: absolute;
+    margin-top: 230px;
+}
+
+.facebook {
+    margin-left: 35px;
+}
+
+.facebook:hover {
+    filter: brightness(500%);
+}
+
+.instagram {
+    margin-left: 28px;
+}
+
+.instagram:hover {
+    filter: brightness(500%);
+}
+
+.twitter {
+    margin-left: 28px;
+}
+
+.twitter:hover {
+    filter: brightness(500%);
+}
+
+.pinterest {
+    margin-left: 28px;
+}
+
+.pinterest:hover {
+    filter: brightness(500%);
+}
+
+@media screen and (max-width: 400px) {
+
+    .main-text{
+        text-align: center;
+        margin-left: 300px;
+    }
+
+    .egg {
+        margin-left: -210px;
+        width: 1439px;
+        height: auto;
+    }
+
+    .brand {
+        margin: 2150px 0 0 300px;
+    }
+
+    .section-two-main-text {
+        text-align: center;
+        font-size: 100px;
+        line-height: 120px;
+    }
+
+    .section-two-first-text {
+        margin-top: 150px;
+        font-size: 50px;
+        line-height: 50px;
+    }
+
+    .section-two-second-text {
+        margin-top: 150px;
+        font-size: 65px;
+    }
+
+    .glass {
+        margin: 3500px 0 0 -210px;
+        width: 1439px;
+        height: auto;
+    }
+
+    .stand-out {
+        margin-left: 750px;
+    }
+
+    .section-three-main-text {
+        margin: 3400px 0 0 -500px;
+        text-align: center;
+        font-size: 100px;
+        line-height: 120px;
+    }
+
+    .section-three-first-text {
+        margin: 150px 0 0 -500px;
+        font-size: 50px;
+        line-height: 50px;
+    }
+
+    .section-three-second-text {
+        margin: 150px 0 0 -500px;
+        font-size: 65px;
+    }
+
+    .fruit {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cherry {
+        margin: 4300px 0 0 -1px;
+        width: 1439px;
+        height: auto;
+    }
+
+    .mandarin {
+        margin: 1px 0 0 -1px;
+        width: 1439px;
+        height: auto;
+    }
+
+    .graphic {
+        margin: 2200px 0 0 350px;
+    }
+
+    .graphic-title {
+        font-size: 80px;
+        line-height: 100px;
+        margin-top: 4650px;
+    }
+
+    .graphic-description {
+        line-height: 40px;
+        margin-top: 50px;
+        font-size: 30px;
+    }
+
+    .photography {
+        margin: 3550px 0 0 280px;
+    }
+
+    .photography-title {
+        font-size: 80px;
+        line-height: 100px;
+        margin-top: 4650px;
+    }
+
+    .photography-description {
+        line-height: 40px;
+        margin-top: 50px;
+        font-size: 30px;
+    }
+    
+    .client {
+        line-height: 75px;
+        text-align: center;
+        font-size: 75px;
+        margin: 8800px 0 0 220px;
+    }
+
+    .first-persons {
+        margin: 9150px 0 0 400px;
+    }
+
+    .first-woman {
+        width: 250px;
+    }
+
+    .person-description{
+        font-size: 50px;
+        line-height: 50px;
+    }
+
+    .person-name{
+        margin-top: 100px;
+        line-height: 50px;
+        font-size: 60px;
+    }
+
+    .person-job{
+        margin-top: 100px;
+        line-height: 50px;
+        font-size: 50px;
+    }
+
+    .second-persons {
+        margin: 10800px 0 0 400px;
+    }
+
+    .man {
+        width: 250px;
+    }
+
+    .third-persons {
+        margin: 12550px 0 0 360px;
+    }
+
+    .second-woman {
+        width: 250px;
+    }
+
+
+    .bottle {
+        width: 720px;
+        margin-top: 10500px;
+        position: absolute;
+    }
+
+    .plate {
+        width: 720px;
+        margin: 10500px 0 0 720px;
+        position: absolute;
+    }
+
+    .cone {
+        width: 720px;
+        margin-top: 11390px;
+        position: absolute;
+    }
+
+    .sugar {
+        width: 720px;
+        margin: 11390px 0 0 720px;
+        position: absolute;
+    }
+    
+    footer {
+        margin-top: 31910px;
+        height: 1000px;
+    }
+
+    .footer-logo {
+        width: 600px;
+        margin: -300px 0 0 -300px;
+    }
+
+    .footer-ul {
+        font-size: 60px;
+        margin-left: -340px;
+    }
+
+    .icons {
+        margin-top: 500px;
+    }
+
+    .facebook-icon {
+        width: 60px;
+    }
+
+    .instagram-icon {
+        width: 60px;
+    }
+
+    .twitter-icon {
+        width: 60px;
+    }
+
+    .pinterest-icon {
+        width: 60px;
+    }
+
+    .nav-list {
+        margin: 30px 0 0 40px;  
+        display: none;
+        flex-direction: column;
+        background-color: rgba(194, 238, 255, 0.877);
+        position: absolute;
+        top: 70px;
+        left: -830px;
+        justify-content: center;
+        text-align: center;
+        width: 1000px;
+        height: 1000px;
+        font-size: 80px;
+        padding: 20px;
+    }
+
+    .contact {
+        margin-top: 20px;
+        width: 450px;
+        height: 150px;
+        font-size: 60px;
+        border-radius: 100px;
+    }
+
+}
